@@ -85,7 +85,7 @@ add_action( 'after_setup_theme', 'wp_theme_001_setup' );
  */
 function wp_theme_001_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'wp-theme-001' ),
+		'name'          => __( 'Sidebar #001', 'wp-theme-001' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -93,8 +93,43 @@ function wp_theme_001_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidebar #002', 'wp-theme-001' ),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidebar #003', 'wp-theme-001' ),
+		'id'            => 'sidebar-3',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidebar #004', 'wp-theme-001' ),
+		'id'            => 'sidebar-4',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
+
 add_action( 'widgets_init', 'wp_theme_001_widgets_init' );
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class($classes, $item){
+	if( in_array('current-menu-item', $classes) ){
+		$classes[] = 'active ';
+	}
+	return $classes;
+}
 
 /**
  * Enqueue scripts and styles.
