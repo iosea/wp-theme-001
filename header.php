@@ -44,7 +44,7 @@
 			relativeUrls : false, // whether to adjust url's to be relative
 			// if false, url's are already relative to the
 			// entry less file
-			rootpath : ':/a.com/'// a path to add on to the start of every url
+			rootpath : ''// a path to add on to the start of every url
 			//resource
 		};
 	</script>
@@ -70,13 +70,13 @@
 
 	<?php
 	$defaults = array(
-		'theme_location'  => 'primary',
-		'menu'            => '',
+		'theme_location'  => '',
+		'menu'            => 'div',
 		'container'       => 'div',
 		'container_class' => 'collapse navbar-collapse',
 		'container_id'    => 'bs-example-navbar-collapse-1',
 		'menu_class'      => 'nav navbar-nav navbar-right',
-		'menu_id'         => '',
+		'menu_id'         => '321',
 		'echo'            => true,
 		'fallback_cb'     => 'wp_page_menu',
 		'before'          => '',
@@ -92,6 +92,7 @@
 	<!-- HEADER -->
 	<div class="header">
 
+
 		<div class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
 
@@ -103,7 +104,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Brand</a>
+					<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> &#166; <?php bloginfo('description'); ?>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
