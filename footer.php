@@ -10,12 +10,12 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container-fluid">
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wp-theme-001' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'wp-theme-001' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'wp-theme-001' ), 'wp-theme-001', '<a href="http://andreseidel.com" rel="designer">André Seidel</a>' ); ?>
-			</div><!-- .site-info -->
-
+			<div class="row">
+				<div class="col-md-6">
+					<p>Developed by <a href="#">André Seidel</a>. Powered by <a href="http://wordpress.org/" target="_blank">Wordpress</a>. <a href="#">Privacy Policy</a> &#124; <a href="#">Terms of Service</a></p>
+				</div>
+				<div class="col-md-6"></div>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 
