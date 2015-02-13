@@ -83,7 +83,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> &#166; <?php bloginfo('description'); ?>
+					<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> <br/><?php bloginfo('description'); ?>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
