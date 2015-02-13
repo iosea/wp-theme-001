@@ -83,7 +83,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> <br/><?php bloginfo('description'); ?>
+					<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a><br/><?php bloginfo('description'); ?>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -93,7 +93,7 @@
                     'container'       => 'div',
                     'container_class' => 'collapse navbar-collapse',
                     'container_id'    => 'bs-example-navbar-collapse-1',
-                    'menu_class'      => 'nav navbar-nav navbar-right',
+                    'menu_class'      => 'nav navbar-nav navbar-right main-nav',
                     'menu_id'         => '321',
                     'echo'            => true,
                     'fallback_cb'     => 'wp_page_menu',
