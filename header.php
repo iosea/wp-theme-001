@@ -68,27 +68,6 @@
 
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wp-theme-001' ); ?></a>
 
-	<?php
-	$defaults = array(
-		'theme_location'  => '',
-		'menu'            => 'div',
-		'container'       => 'div',
-		'container_class' => 'collapse navbar-collapse',
-		'container_id'    => 'bs-example-navbar-collapse-1',
-		'menu_class'      => 'nav navbar-nav navbar-right',
-		'menu_id'         => '321',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-		'depth'           => 0,
-		'walker'          => ''
-	);
-	?>
-
 	<!-- HEADER -->
 	<div class="header">
 
@@ -108,7 +87,24 @@
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<?php wp_nav_menu( $defaults ); ?>
+				<?php wp_nav_menu( array(
+                    'theme_location'  => 'primary',
+                    'menu'            => '',
+                    'container'       => 'div',
+                    'container_class' => 'collapse navbar-collapse',
+                    'container_id'    => 'bs-example-navbar-collapse-1',
+                    'menu_class'      => 'nav navbar-nav navbar-right',
+                    'menu_id'         => '321',
+                    'echo'            => true,
+                    'fallback_cb'     => 'wp_page_menu',
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    'walker'          => ''
+                ) ); ?>
 
 			</div>
 		</div>
