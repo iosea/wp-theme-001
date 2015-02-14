@@ -88,7 +88,7 @@
                             <span style="font-weight: 600;">Andre</span><span style="font-weight: 200;">Seidel</span>
                     </a>
                     <br/>
-                    <?php bloginfo('description'); ?>
+                    <span style="font-weight: 400"><?php bloginfo('description'); ?></span>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
