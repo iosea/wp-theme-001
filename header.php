@@ -27,7 +27,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<!-- Styles -->
-	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700'>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,600,700'>
 	<link rel="stylesheet/less" type="text/css" href="<?php bloginfo('template_url'); ?>/less/style.less" />
 
 	<script type='text/javascript'>
@@ -83,7 +83,12 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a><br/><?php bloginfo('description'); ?>
+					<a href="<?php echo get_option('home'); ?>" style="font-size: 30px; text-decoration: none;">
+                        <?php //bloginfo('name'); ?>
+                            <span style="font-weight: 600;">Andre</span><span style="font-weight: 200;">Seidel</span>
+                    </a>
+                    <br/>
+                    <?php bloginfo('description'); ?>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
