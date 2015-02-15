@@ -66,7 +66,9 @@
 <a id="top" name="top"/>
 <div id="page" class="hfeed site">
 
+    <!--
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wp-theme-001' ); ?></a>
+	-->
 
 	<!-- HEADER -->
 	<div class="header">
