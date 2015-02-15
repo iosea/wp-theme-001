@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+            <div class="container-fluid">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -37,7 +38,8 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-
+                
+            </div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

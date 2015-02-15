@@ -15,8 +15,8 @@
 				<div class="row">
 					<div class="col-md-6">
 						<p>
-							Copyright <?php echo('&copy;') . date("Y"); ?> <a href="<?php echo esc_url(home_url("/")) ?>">André Seidel</a>, all rights reserved.<br/>
-							Powered by <a href="http://wordpress.org/" target="_blank">Wordpress</a> &#124; <a href="#">Privacy Policy</a> &#124; <a href="#">Terms of Service</a>
+                            <a href="<?php echo esc_url(home_url("/")) ?>">André Seidel</a>, Copyright <?php echo('&copy;') . date("Y"); ?>. All Rights Reserved.<br/>
+                            <a href="#">Privacy Policy</a> &#124; <a href="#">Terms of Service</a> &#124; Powered by <a href="http://wordpress.org/" target="_blank">Wordpress</a>.
 						</p>
 					</div>
 					<div class="col-md-6"></div>
