@@ -1,0 +1,172 @@
+@import "reset.less";
+
+// Import Bootstrap
+@import "../lib/bootstrap-3.3.2/less/variables.less";
+@import "../lib/bootstrap-3.3.2/less/bootstrap.less";
+
+// Import Font Awesome
+@import "../lib/font-awesome-4.3.0/less/variables.less";
+@import "../lib/font-awesome-4.3.0/less/font-awesome.less";
+
+@import "variables.less";
+
+@font-size-base: 14px;
+@font-color-base: #555;
+
+/* COMMON
+------------------------------------*/
+* {
+  border-radius: 0 !important;
+  color: @font-color-base;
+}
+
+html {
+  font-size: @font-size-base;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  height: 40px;
+  line-height: 20px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  color: @font-color-base;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: red;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 45px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.navbar-default .navbar-nav > li.active > a {
+  border-bottom: 1px solid red;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
+}
+
+.main-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 15px;
+}
+
+
+/* BOOTSTRAP
+------------------------------------*/
+.header .navbar-default .navbar-nav > li > a, .header .navbar-default .navbar-nav > li > a:hover, .header .navbar-default .navbar-nav > li > a:focus, .header .navbar-default .navbar-nav > .active > a, .header .navbar-default .navbar-nav > .active > a:hover, .header .navbar-default .navbar-nav > .active > a:focus {
+  background: none;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  border-color: white;
+  background-color: white;
+  background-image: none;
+  box-shadow: none
+}
+
+/*
+Footer
+*/
+.site-footer {
+  background: #222;
+  border-top: 1px solid #444;
+  padding: 15px 0px 0px 0px;
+}
+
+.site-footer p {
+  color: #999;
+}
+
+.site-footer a,
+.site-footer a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus,
+.site-footer a:active {
+  color: red;
+}
+
+/*Back To Top
+------------------------------------*/
+#back-to-top {
+  color: #fff;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background: #222;
+  position: relative;
+  right: 14px !important;
+  bottom: 11px !important;
+  border-radius: 3px !important;
+}
+
+#back-to-top:after {
+  top: -2px;
+  left: 8.5px;
+  content: "\f106";
+  position: absolute;
+  text-align: center;
+  font-family: FontAwesome;
+}
+
+#back-to-top:hover {
+  color: #fff;
+  background: red;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}

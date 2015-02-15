@@ -28,7 +28,7 @@
 
 	<!-- Styles -->
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,600,700'>
-	<link rel="stylesheet/less" type="text/css" href="<?php bloginfo('template_url'); ?>/less/style.less" />
+	<link rel="stylesheet/less" type="text/css" href="<?php bloginfo('template_url'); ?>/less/theme.less" />
 
 	<script type='text/javascript'>
 		less = {
